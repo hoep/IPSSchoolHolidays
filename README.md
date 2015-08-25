@@ -1,6 +1,6 @@
 ﻿# Schulferien
 
-Dieses Modul zeigt an, ob es sich heute um einen Feiertag handelt.
+Dieses Modul zeigt an, ob es sich heute um einen Ferientag handelt.
 Im Konfigurationsformular muss das Bundesland ausgewählt werden.
 Es handelt sich hier um eine Umsetzung von dem Schulferien-Script von kronos aus dem IP-Symcon-Forum.  
 [IP-Symcon Forum: Schulferien](https://www.symcon.de/forum/threads/20398-Schulferien)  
@@ -12,7 +12,7 @@ Es handelt sich hier um eine Umsetzung von dem Schulferien-Script von kronos aus
 1. [Funktionsumfang](#1-funktionsumfang) 
 2. [Voraussetzungen](#2-voraussetzungen)
 3. [Installation](#3-installation)
-4. [Funktionsreferenz](#8-funktionsreferenz) 
+4. [Funktionsreferenz](#4-funktionsreferenz) 
 5. [Anhang](#5-anhang)
 
 ## 1. Funktionsumfang
