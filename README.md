@@ -2,6 +2,8 @@
 
 Dieses Modul zeigt an, ob es sich heute um einen Feiertag handelt.
 Im Konfigurationsformular muss das Bundesland ausgewählt werden.
+Es handelt sich hier um eine Umsetzung von dem Schulferien-Script von kronos aus dem IP-Symcon-Forum.  
+[IP-Symcon Forum: Schulferien](https://www.symcon.de/forum/threads/20398-Schulferien)  
 
 ## Dokumentation
 
@@ -50,4 +52,5 @@ SCHOOL_Update( interger $InstanceID );
   - Erstes Release
 
 **Danksagung:**  
- An Kronos aus dem IPS-Forum für das Original-Script.
+ An kronos aus dem IPS-Forum für das Original-Script.  
+[IP-Symcon Forum: Schulferien](https://www.symcon.de/forum/threads/20398-Schulferien)
