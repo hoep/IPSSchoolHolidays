@@ -44,7 +44,7 @@ class Schulferien extends IPSModule
                 $jetzt = date("Ymd") . "\n";
                 if ($jetzt >= $start and $jetzt <= $ende)
                 {
-                    $ferien = $name;
+                    $ferien = explode(' ', $name)[0];
                 }
             }
         }
