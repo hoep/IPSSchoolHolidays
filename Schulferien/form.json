@@ -1,7 +1,7 @@
 {
 	"elements":
 	[
-		{ "name": "area", "type": "Select", "caption": "AREA", 
+		{ "name": "Area", "type": "Select", "caption": "Bundesland", 
 			"options": [ 
 				{ "label": "Baden-Württemberg", "value": "Baden_Wuerttemberg" }, 
 				{ "label": "Bayern", "value": "Bayern" }, 

@@ -9,7 +9,7 @@ class Schulferien extends IPSModule
         parent::Create();
         //These lines are parsed on Symcon Startup or Instance creation
         //You cannot use variables here. Just static values.
-        $this->RegisterPropertyString("AREA", "Baden_Wuerttemberg");
+        $this->RegisterPropertyString("Area", "Baden_Wuerttemberg");
     }
 
     public function ApplyChanges()
@@ -29,7 +29,7 @@ class Schulferien extends IPSModule
     private function GetFeiertag()
     {
         $jahr = date("Y");
-        $link = "http://www.schulferien.org/iCal/Ferien/icals/Ferien_" . $this->ReadPropertyString("AREA") . "_" . $jahr . ".ics";
+        $link = "http://www.schulferien.org/iCal/Ferien/icals/Ferien_" . $this->ReadPropertyString("Area") . "_" . $jahr . ".ics";
         $ferien = "Keine Ferien";
         $meldung = file($link);
         $anzahl = (count($meldung) - 1);
