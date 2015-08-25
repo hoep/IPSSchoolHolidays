@@ -1,7 +1,7 @@
-# Schulferien
+ï»¿# Schulferien
 
 Dieses Modul zeigt an, ob es sich heute um einen Feiertag handelt.
-Im Konfigurationsformular muss das Bundesland ausgewählt werden.
+Im Konfigurationsformular muss das Bundesland ausgewÃ¤hlt werden.
 Es handelt sich hier um eine Umsetzung von dem Schulferien-Script von kronos aus dem IP-Symcon-Forum.  
 [IP-Symcon Forum: Schulferien](https://www.symcon.de/forum/threads/20398-Schulferien)  
 
@@ -17,8 +17,8 @@ Es handelt sich hier um eine Umsetzung von dem Schulferien-Script von kronos aus
 
 ## 1. Funktionsumfang
 
- Über die Webseite [http://www.schulferien.org](http://www.schulferien.org) wird ermittelt ob heute Schulferien sind.  
- Entsprechend werden die beiden Statusvariablen mit Werten gefüllt.  
+ Ãœber die Webseite [http://www.schulferien.org](http://www.schulferien.org) wird ermittelt ob heute Schulferien sind.  
+ Entsprechend werden die beiden Statusvariablen mit Werten gefÃ¼llt.  
 
 ## 2. Voraussetzungen
 
@@ -31,7 +31,7 @@ Es handelt sich hier um eine Umsetzung von dem Schulferien-Script von kronos aus
         [IP-Symcon Forum: Schulferien](https://www.symcon.de/forum/threads/20398-Schulferien)
 
    - IPS 4.x  
-        Über das 'Modul Control' folgende URL hinzufügen:  
+        Ãœber das 'Modul Control' folgende URL hinzufÃ¼gen:  
         `git://github.com/Nall-chan/Schulferien.git`  
 
 
@@ -40,7 +40,7 @@ Es handelt sich hier um eine Umsetzung von dem Schulferien-Script von kronos aus
 ```php
 SCHOOL_Update( interger $InstanceID );
 ```
- Startet eine neue Prüfung ob Ferien sind.  
+ Startet eine neue PrÃ¼fung ob Ferien sind.  
 
 ## 5. Anhang
 
@@ -52,5 +52,5 @@ SCHOOL_Update( interger $InstanceID );
   - Erstes Release
 
 **Danksagung:**  
- An kronos aus dem IPS-Forum für das Original-Script.  
+ An kronos aus dem IPS-Forum fÃ¼r das Original-Script.  
 [IP-Symcon Forum: Schulferien](https://www.symcon.de/forum/threads/20398-Schulferien)

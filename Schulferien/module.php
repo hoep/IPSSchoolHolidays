@@ -21,7 +21,7 @@ class Schulferien extends IPSModule
         $this->RegisterVariableString("SchoolHoliday", "Ferien");
         // 15 Minuten Timer
         $this->RegisterTimer("UpdateSchoolHolidays", 15 * 60, 'SCHOOL_Update($_IPS[\'TARGET\']);');
-        // Nach übernahme der Einstellungen oder IPS-Neustart einmal Update durchführen.
+        // Nach Ã¼bernahme der Einstellungen oder IPS-Neustart einmal Update durchfÃ¼hren.
         $this->Update();
         //$this->RegisterEventCyclic("UpdateTimer", "Automatische aktualisierung", 15);
     }
