@@ -32,7 +32,7 @@ Es handelt sich hier um eine Umsetzung von dem Schulferien-Script von kronos aus
 
    - IPS 4.x  
         Über das 'Modul Control' folgende URL hinzufügen:  
-        `git://github.com/Nall-chan/Schulferien.git`  
+        `git://github.com/Nall-chan/IPSSchulferien.git`  
 
 
 ## 4. Funktionsreferenz
