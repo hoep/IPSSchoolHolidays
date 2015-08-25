@@ -1,0 +1,14 @@
+{
+    "id": "{3B2628A3-AA47-431F-BF65-074C7002174B}",
+    "name": "Schulferien",
+    "type": 0,
+    "vendor": "none",
+    "aliases": 
+    [
+        "Schulferien"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "SCHOOL"
+}
