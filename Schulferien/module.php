@@ -31,7 +31,10 @@ class Schulferien extends IPSModule
         $jahr = date("Y");
         $link = "http://www.schulferien.org/iCal/Ferien/icals/Ferien_" . $this->ReadPropertyString("Area") . "_" . $jahr . ".ics";
         $ferien = "Keine Ferien";
-        $meldung = file($link);
+        $meldung = @file($link);
+        if ($meldung === false)
+                throw new Exception("Cannot load iCal Data.");
+
         $anzahl = (count($meldung) - 1);
 
         for ($count = 0; $count < $anzahl; $count++)
