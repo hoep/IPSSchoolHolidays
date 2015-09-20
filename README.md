@@ -38,7 +38,7 @@ Es handelt sich hier um eine Umsetzung von dem Schulferien-Script von kronos aus
 ## 4. Funktionsreferenz
 
 ```php
-SCHOOL_Update( interger $InstanceID );
+SCHOOL_Update( integer $InstanceID );
 ```
  Startet eine neue Prüfung ob Ferien sind.  
 
