@@ -1,4 +1,4 @@
-﻿# Schulferien
+# Schulferien
 
 Dieses Modul zeigt an, ob es sich heute um einen Ferientag handelt.
 Im Konfigurationsformular muss das Bundesland ausgewählt werden.
