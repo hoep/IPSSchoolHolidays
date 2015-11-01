@@ -33,7 +33,7 @@ class Schulferien extends IPSModule
         $ferien = "Keine Ferien";
         $meldung = @file($link);
         if ($meldung === false)
-                throw new Exception("Cannot load iCal Data.");
+                throw new Exception("Cannot load iCal Data.",E_USER_NOTICE);
 
         $anzahl = (count($meldung) - 1);
 
@@ -56,7 +56,16 @@ class Schulferien extends IPSModule
 
     public function Update()
     {
-        $holiday = $this->GetFeiertag();
+        try
+        {
+            $holiday = $this->GetFeiertag();    
+        } catch (Exception $exc)
+        {
+            trigger_error($exc->getMessage(),$exc->getCode());
+            return false;
+        }
+
+        
         $this->SetValueString("SchoolHoliday", $holiday);
         if ($holiday == "Keine Ferien")
         {
@@ -66,6 +75,7 @@ class Schulferien extends IPSModule
         {
             $this->SetValueBoolean("IsSchoolHoliday", true);
         }
+        return true;
     }
     protected function RegisterTimer($Name, $Interval, $Script)
     {
@@ -75,7 +85,7 @@ class Schulferien extends IPSModule
         if ($id > 0)
         {
             if (!IPS_EventExists($id))
-                throw new Exception("Ident with name " . $Name . " is used for wrong object type");
+                throw new Exception("Ident with name " . $Name . " is used for wrong object type",E_USER_WARNING);
 
             if (IPS_GetEvent($id)['EventType'] <> 1)
             {
@@ -110,7 +120,7 @@ class Schulferien extends IPSModule
         if ($id > 0)
         {
             if (!IPS_EventExists($id))
-                throw new Exception('Timer not present');
+                throw new Exception('Timer not present',E_USER_WARNING);
             IPS_DeleteEvent($id);
         }
     }
@@ -119,9 +129,9 @@ class Schulferien extends IPSModule
     {
         $id = @IPS_GetObjectIDByIdent($Name, $this->InstanceID);
         if ($id === false)
-            throw new Exception('Timer not present');
+            throw new Exception('Timer not present',E_USER_WARNING);
         if (!IPS_EventExists($id))
-            throw new Exception('Timer not present');
+            throw new Exception('Timer not present',E_USER_WARNING);
         $Event = IPS_GetEvent($id);
         if ($Interval < 1)
         {
