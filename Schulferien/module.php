@@ -40,7 +40,7 @@ class Schulferien extends IPSModule
         if ($meldung2 === false)
             throw new Exception("Cannot load iCal Data.", E_USER_NOTICE);
 
-        $meldung = $meldung + $meldung2;
+        $meldung = array_merge($meldung,$meldung2);
         $ferien = "Keine Ferien";
 
         $anzahl = (count($meldung) - 1);
