@@ -10,7 +10,7 @@
 				{ "label": "Bremen", "value": "Bremen" },
 				{ "label": "Hamburg", "value": "Hamburg" },
 				{ "label": "Hessen", "value": "Hessen" },
-				{ "label": "Mecklenburg-Vorpommern", "value": "Mecklenburg-Vorpommern" }, 
+				{ "label": "Mecklenburg-Vorpommern", "value": "Mecklenburg_Vorpommern" }, 
 				{ "label": "Niedersachsen", "value": "Niedersachsen" }, 
 				{ "label": "Nordrhein-Westfalen", "value": "Nordrhein_Westfalen" }, 
 				{ "label": "Rheinland-Pfalz", "value": "Rheinland_Pfalz" },
