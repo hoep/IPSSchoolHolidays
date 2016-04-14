@@ -29,6 +29,7 @@ class Schulferien extends IPSModule
     private function GetFeiertag()
     {
         $jahr = date("Y") - 1;
+        IPS_LogMessage("Schulferien", $this->ReadPropertyString("BaseURL") . strtolower($this->ReadPropertyString("Area")) . "_" . $jahr . ".ics");
         $link = $this->ReadPropertyString("BaseURL") . strtolower($this->ReadPropertyString("Area")) . "_" . $jahr . ".ics";
         $meldung = @file($link);
         if ($meldung === false)
