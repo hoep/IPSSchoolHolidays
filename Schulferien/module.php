@@ -10,6 +10,7 @@ class Schulferien extends IPSModule
         //These lines are parsed on Symcon Startup or Instance creation
         //You cannot use variables here. Just static values.
         $this->RegisterPropertyString("Area", "Baden_Wuerttemberg");
+        $this->RegisterPropertyString("BaseURL", "http://www.schulferien.org/media/ical/deutschland/ferien_");
     }
 
     public function ApplyChanges()
@@ -23,24 +24,23 @@ class Schulferien extends IPSModule
         $this->RegisterTimer("UpdateSchoolHolidays", 15 * 60, 'SCHOOL_Update($_IPS[\'TARGET\']);');
         // Nach übernahme der Einstellungen oder IPS-Neustart einmal Update durchführen.
         $this->Update();
-        //$this->RegisterEventCyclic("UpdateTimer", "Automatische aktualisierung", 15);
     }
 
     private function GetFeiertag()
     {
         $jahr = date("Y") - 1;
-        $link = "http://www.schulferien.org/iCal/Ferien/icals/Ferien_" . $this->ReadPropertyString("Area") . "_" . $jahr . ".ics";
+        $link = $this->ReadPropertyString("BaseURL") . strtolower($this->ReadPropertyString("Area")) . "_" . $jahr . ".ics";
         $meldung = @file($link);
         if ($meldung === false)
             throw new Exception("Cannot load iCal Data.", E_USER_NOTICE);
 
         $jahr = date("Y");
-        $link = "http://www.schulferien.org/iCal/Ferien/icals/Ferien_" . $this->ReadPropertyString("Area") . "_" . $jahr . ".ics";
+        $link = $this->ReadPropertyString("BaseURL") . strtolower($this->ReadPropertyString("Area")) . "_" . $jahr . ".ics";
         $meldung2 = @file($link);
         if ($meldung2 === false)
             throw new Exception("Cannot load iCal Data.", E_USER_NOTICE);
 
-        $meldung = array_merge($meldung,$meldung2);
+        $meldung = array_merge($meldung, $meldung2);
         $ferien = "Keine Ferien";
 
         $anzahl = (count($meldung) - 1);
@@ -53,7 +53,7 @@ class Schulferien extends IPSModule
                 $start = trim(substr($meldung[$count + 1], 19));
                 $ende = trim(substr($meldung[$count + 2], 17));
                 $jetzt = date("Ymd") . "\n";
-                if ($jetzt >= $start and $jetzt <= $ende)
+                if (($jetzt >= $start) and ( $jetzt <= $ende))
                 {
                     $ferien = explode(' ', $name)[0];
                 }

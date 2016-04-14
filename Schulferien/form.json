@@ -1,29 +1,93 @@
 {
-	"elements":
-	[
-		{ "name": "Area", "type": "Select", "caption": "Bundesland", 
-			"options": [ 
-				{ "label": "Baden-Württemberg", "value": "Baden_Wuerttemberg" }, 
-				{ "label": "Bayern", "value": "Bayern" }, 
-				{ "label": "Berlin", "value": "Berlin" },
-				{ "label": "Brandenburg", "value": "Brandenburg" },
-				{ "label": "Bremen", "value": "Bremen" },
-				{ "label": "Hamburg", "value": "Hamburg" },
-				{ "label": "Hessen", "value": "Hessen" },
-				{ "label": "Mecklenburg-Vorpommern", "value": "Mecklenburg_Vorpommern" }, 
-				{ "label": "Niedersachsen", "value": "Niedersachsen" }, 
-				{ "label": "Nordrhein-Westfalen", "value": "Nordrhein_Westfalen" }, 
-				{ "label": "Rheinland-Pfalz", "value": "Rheinland_Pfalz" },
-				{ "label": "Saarland", "value": "Saarland" },
-				{ "label": "Sachsen", "value": "Sachsen" },
-				{ "label": "Sachsen-Anhalt", "value": "Sachsen_Anhalt" },
-				{ "label": "Schleswig-Holstein", "value": "Schleswig_Holstein" },
-				{ "label": "Thüringen", "value": "Thueringen" }
-			]
-		}
-	],
-	"actions":
-	[
-		{ "type": "Button", "label": "Update", "onClick": "SCHOOL_Update($id);" }
-        ]	
+    "elements":
+            [
+                {
+                    "name": "Area",
+                    "type": "Select",
+                    "caption": "Bundesland",
+                    "options": [
+                        {
+                            "label": "Baden-Württemberg",
+                            "value": "Baden_Wuerttemberg"
+                        },
+                        {
+                            "label": "Bayern",
+                            "value": "Bayern"
+                        },
+                        {
+                            "label": "Berlin",
+                            "value": "Berlin"
+                        },
+                        {
+                            "label": "Brandenburg",
+                            "value": "Brandenburg"
+                        },
+                        {
+                            "label": "Bremen",
+                            "value": "Bremen"
+                        },
+                        {
+                            "label": "Hamburg",
+                            "value": "Hamburg"
+                        },
+                        {
+                            "label": "Hessen",
+                            "value": "Hessen"
+                        },
+                        {
+                            "label": "Mecklenburg-Vorpommern",
+                            "value": "Mecklenburg_Vorpommern"
+                        },
+                        {
+                            "label": "Niedersachsen",
+                            "value": "Niedersachsen"
+                        },
+                        {
+                            "label": "Nordrhein-Westfalen",
+                            "value": "Nordrhein_Westfalen"
+                        },
+                        {
+                            "label": "Rheinland-Pfalz",
+                            "value": "Rheinland_Pfalz"
+                        },
+                        {
+                            "label": "Saarland",
+                            "value": "Saarland"
+                        },
+                        {
+                            "label": "Sachsen",
+                            "value": "Sachsen"
+                        },
+                        {
+                            "label": "Sachsen-Anhalt",
+                            "value": "Sachsen_Anhalt"
+                        },
+                        {
+                            "label": "Schleswig-Holstein",
+                            "value": "Schleswig_Holstein"
+                        },
+                        {
+                            "label": "Thüringen",
+                            "value": "Thueringen"
+                        }
+                    ]
+                },
+                {
+                    "type": "Label",
+                    "label": "Basis-URL von Schulferien.org"
+                },
+                {
+                    "name": "BaseURL",
+                    "type": "ValidationTextBox",
+                    "caption": "URL"
+                }
+            ],
+    "actions":
+            [
+                {
+                    "type": "Button",
+                    "label": "Update",
+                    "onClick": "SCHOOL_Update($id);"
+                }
+            ]
 }
