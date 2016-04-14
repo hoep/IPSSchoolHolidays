@@ -9,7 +9,7 @@ class Schulferien extends IPSModule
         parent::Create();
         //These lines are parsed on Symcon Startup or Instance creation
         //You cannot use variables here. Just static values.
-        $this->RegisterPropertyString("Area", "Baden_Wuerttemberg");
+        $this->RegisterPropertyString("Area", "baden-wuerttemberg");
         $this->RegisterPropertyString("BaseURL", "http://www.schulferien.org/media/ical/deutschland/ferien_");
     }
 
@@ -29,7 +29,6 @@ class Schulferien extends IPSModule
     private function GetFeiertag()
     {
         $jahr = date("Y") - 1;
-        IPS_LogMessage("Schulferien", $this->ReadPropertyString("BaseURL") . strtolower($this->ReadPropertyString("Area")) . "_" . $jahr . ".ics");
         $link = $this->ReadPropertyString("BaseURL") . strtolower($this->ReadPropertyString("Area")) . "_" . $jahr . ".ics";
         $meldung = @file($link);
         if ($meldung === false)

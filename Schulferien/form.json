@@ -8,7 +8,7 @@
                     "options": [
                         {
                             "label": "Baden-Württemberg",
-                            "value": "Baden_Wuerttemberg"
+                            "value": "baden-wuerttemberg"
                         },
                         {
                             "label": "Bayern",
@@ -36,7 +36,7 @@
                         },
                         {
                             "label": "Mecklenburg-Vorpommern",
-                            "value": "Mecklenburg_Vorpommern"
+                            "value": "mecklenburg-vorpommern"
                         },
                         {
                             "label": "Niedersachsen",
@@ -44,11 +44,11 @@
                         },
                         {
                             "label": "Nordrhein-Westfalen",
-                            "value": "Nordrhein_Westfalen"
+                            "value": "nordrhein-westfalen"
                         },
                         {
                             "label": "Rheinland-Pfalz",
-                            "value": "Rheinland_Pfalz"
+                            "value": "rheinland-pfalz"
                         },
                         {
                             "label": "Saarland",
@@ -60,11 +60,11 @@
                         },
                         {
                             "label": "Sachsen-Anhalt",
-                            "value": "Sachsen_Anhalt"
+                            "value": "sachsen-anhalt"
                         },
                         {
                             "label": "Schleswig-Holstein",
-                            "value": "Schleswig_Holstein"
+                            "value": "schleswig-holstein"
                         },
                         {
                             "label": "Thüringen",
