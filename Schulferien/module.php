@@ -9,8 +9,8 @@ class Schulferien extends IPSModule
         parent::Create();
         //These lines are parsed on Symcon Startup or Instance creation
         //You cannot use variables here. Just static values.
-        $this->RegisterPropertyString("Area", "baden-wuerttemberg");
-        $this->RegisterPropertyString("BaseURL", "http://www.schulferien.org/media/ical/deutschland/ferien_");
+        $this->RegisterPropertyString("Area", "oberoesterreich");
+        $this->RegisterPropertyString("BaseURL", "http://www.schulferien.org/media/ical/oesterreich/ferien_");
     }
 
     public function ApplyChanges()
