@@ -110,7 +110,7 @@
                 },
                 {
                     "type": "Label",
-                    "label": "Basis-URL von Schulferien.org"
+                    "label": "Basis URL von Schulferien.org"
                 },
                 {
                     "name": "BaseURL",
