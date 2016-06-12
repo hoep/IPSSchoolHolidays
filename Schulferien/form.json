@@ -69,6 +69,42 @@
                         {
                             "label": "Thüringen",
                             "value": "Thueringen"
+                        },
+						 {
+                            "label": "Oberösterreich",
+                            "value": "oberoesterreich"
+                        },
+						 {
+                            "label": "Wien",
+                            "value": "wien"
+                        },
+						{
+                            "label": "Burgenland",
+                            "value": "burgenland"
+                        },
+						{
+                            "label": "Kärnten",
+                            "value": "kaernten"
+                        },
+						{
+                            "label": "Niederösterreich",
+                            "value": "niederoesterreich"
+                        },
+						{
+                            "label": "Salzburg",
+                            "value": "salzburg"
+                        },
+						{
+                            "label": "Steiermark",
+                            "value": "steiermark"
+                        },
+						{
+                            "label": "Tirol",
+                            "value": "tirol"
+                        },
+						{
+                            "label": "Vorarlberg",
+                            "value": "vorarlberg"
                         }
                     ]
                 },
